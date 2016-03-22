@@ -356,7 +356,9 @@
 	 * @dependency swap.js
 	 */
 
-	var Plugin = Formstone.Plugin("navigation", {
+
+	var $Locks = null,
+			Plugin = Formstone.Plugin("navigation", {
 			widget: true,
 
 			/**
@@ -431,11 +433,9 @@
 		Classes       = Plugin.classes,
 		RawClasses    = Classes.raw,
 		Events        = Plugin.events,
-		Functions     = Plugin.functions,
+		Functions     = Plugin.functions;
 
-		// Internal
 
-		$Locks        = null;
 
 })
 
